@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sort takes the largest element in the list and moves it to the back,
+comparing each element to the element which is moving;
+When he encounters a bigger one, it takes it and put it to the back of the list.
+It has n^2 upper bound and n lower bound, this algorithm makes it slowest.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sorting is faster algorithm than buble and selection sorting.
+In merge sorting, the list is split into pieces, these pieces are sorting and merging amongst themselves.
+Its upper and lower bound is n times logn.
+I compared real times and determined the fastest comparing algorithm is sort2.
+
+sort3 uses: Selection Sort
+
+How do you know?: In selection sorting, the list is checked from beginning to end,
+the smallest one is kept in memory and moved to the beginning.
+It has n^2 upper and lower bound. Even it's a slower way to listing elements but since it doesn't compare
+every elements with each other, it is faster then bubble sorting.
