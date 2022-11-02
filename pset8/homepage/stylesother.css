@@ -1,0 +1,493 @@
+body, html {
+    font-family: 'Bahnschrift', sans-serif;
+    color: auto;
+}
+
+body > nav
+{
+    background-color: white;
+}
+
+.navbar-light .navbar-brand
+{
+    color: black;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.navbar-light .navbar-brand:hover
+{
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link
+{
+    color: black;
+    font-size: 1em;
+}
+
+.navbar .navbar-nav .nav-link:hover
+{
+    color: black;
+}
+
+.navbar .navbar-nav .nav-item
+{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #935E55;
+    width: 0%;
+    content: "";
+    height: 3px;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after
+{
+    width: 100%;
+}
+
+.navbar-toggler
+{
+    background-color: #FFF
+}
+
+.page-footer-other
+{
+    background-color: #000000;
+}
+
+#clm1, #clm2, #clm3
+{
+    margin-top: 1%;
+}
+
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    margin-top: 2%;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-github:hover { /* round github icon*/
+    background: #2D333B;
+}
+
+.social .fa-linkedin:hover { /* round linkedin icon*/
+    background: #0094BC;
+}
+
+.social .fa-twitter:hover { /* round twitter icon*/
+    background: #00ABE3;
+}
+
+.social .fa-instagram:hover { /* round instagram icon*/
+    background: #CD3F8A;
+}
+
+
+#outter_container
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.jumbotron {
+    background: rgba(0,0,0, 0);
+    color: black;
+    margin-bottom: 0rem;
+    padding: 0rem 0rem;
+    text-align: left;
+}
+
+
+#outter_container > hr
+{
+    border: 1px solid black;
+
+}
+
+/* Contact form */
+
+#form-div
+{
+    align-items: center;
+}
+
+#contact\=h1
+{
+    text-align: center;
+}
+
+.form-style
+{
+    margin: auto;
+    width: 380px;
+    padding: 2% 1% 1% 2%;
+}
+.form-style td
+{
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 2% 0 0 0;
+}
+.form-style label
+{
+    margin:0 0 0 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style .required
+{
+    color:red;
+}
+.form-style input[type=submit], .form-style input[type=reset]
+{
+    background: #4eb5f1;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover
+{
+    background: #909AA0;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style .field-textarea
+{
+    height: 100px;
+}
+.form-style input[type=text],
+.form-style input[type=email],
+textarea
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 1%;
+    margin: 0%;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.form-style .long
+{
+    width: 100%;
+}
+
+.form-style input[type=text]:focus,
+.form-style input[type=email]:focus,
+.form-style textarea:focus
+{
+    -moz-box-shadow: 0 0 8px #909AA0;
+    -webkit-box-shadow: 0 0 8px #909AA0;
+    box-shadow: 0 0 8px #909AA0;
+    border: 1px solid #909AA0;
+}
+
+.error
+{
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+
+/* Set the background picture
+body, html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* height: 100%; */
+    /* background-color: #333; */
+    /* background-color: bisque; */
+}
+
+/* @media screen and (min-width: 981px){
+    body{
+        margin:0px;
+        padding: 0px;
+        background-image: url("desktop.jpg");
+        background-color: #4E5756;
+        background-repeat : no-repeat;
+        background-position: bottom;
+        background-size: fill;
+        height: 1200px;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (max-width: 980px){
+    body{
+        margin:0px;
+        padding: 0px;
+        background-image: url("mobile.jpg");
+        background-color: #4E5756;
+        background-repeat : no-repeat;
+        background-position: center fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.navbar-light .navbar-brand
+{
+    color: #F5F5F5;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.navbar-light .navbar-brand:hover
+{
+    color: #F5F5F5;
+}
+
+.navbar .navbar-nav .nav-link
+{
+    color: #F5F5F5;
+    font-size: 1em;
+}
+
+.navbar .navbar-nav .nav-link:hover
+{
+    color: #F5F5F5;
+}
+
+.navbar .navbar-nav .nav-item
+{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #935E55;
+    width: 0%;
+    content: "";
+    height: 3px;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after
+{
+    width: 100%;
+}
+
+.navbar-toggler
+{
+    background-color: #FFF
+}
+
+.container
+{
+    max-width: 1440px;
+    margin: auto;
+    padding: auto;
+}
+
+.jumbotron {
+    background: rgba(0,0,0, 0);
+    color: #fff;
+    margin-bottom: 0rem;
+    padding: 3rem 1rem;
+    text-align: left;
+}
+.btn
+{
+    background-color: #4E5756;
+    border-color: #ffffff;
+    color: #935E55;
+    padding: 6px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 0.4s;
+}
+
+.btn:hover
+{
+    background-color: #935E55;
+    color: white;
+}
+
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}  */
+
+
+/* --- Background picture --- */
+
+/*
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #F8F9FA;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb-item {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.breadcrumb-item.active {
+    color: #000000;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #F8F9FA;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+Link style of THIS IS part
+a.jumbotron:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.jumbotron:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.jumbotron:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+Link style for other links
+
+a:link {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: underline;
+}
+*/
+
+
+
+
+
+/* input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"]:hover {
+    background-color: #F8F9FA;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+} */

@@ -1,0 +1,259 @@
+/* Set the background picture */
+body, html {
+    font-family: 'Bahnschrift', sans-serif;
+    color: black;
+}
+
+@media screen and (min-width: 981px){
+    body{
+        margin:0px;
+        padding: 0px;
+        background-image: url("desktop.jpg");
+        background-color: #4E5756;
+        background-repeat : no-repeat;
+        background-position: bottom;
+        background-size: fill;
+        height: 1200px;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (max-width: 980px){
+    body{
+        margin:0px;
+        padding: 0px;
+        background-image: url("mobile.jpg");
+        background-color: #4E5756;
+        background-repeat : no-repeat;
+        background-position: center fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+.navbar-light .navbar-brand
+{
+    color: #F5F5F5;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.navbar-light .navbar-brand:hover
+{
+    color: #F5F5F5;
+}
+
+.navbar .navbar-nav .nav-link
+{
+    color: #F5F5F5;
+    font-size: 1em;
+}
+
+.navbar .navbar-nav .nav-link:hover
+{
+    color: #F5F5F5;
+}
+
+.navbar .navbar-nav .nav-item
+{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #935E55;
+    width: 0%;
+    content: "";
+    height: 3px;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after
+{
+    width: 100%;
+}
+
+.navbar-toggler
+{
+    background-color: #FFF
+}
+
+.container
+{
+    max-width: 1440px;
+    margin: auto;
+    padding: auto;
+}
+
+.jumbotron {
+    background: rgba(0,0,0, 0);
+    color: #fff;
+    margin-left: 0;
+    text-align: center;
+    padding: 0, 0, 0, 0;
+}
+.btn
+{
+    background-color: #4E5756;
+    border-color: #F5F5F5;
+    color: #935E55;
+    padding: 6px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 0.4s;
+}
+.btn:hover
+{
+    background-color: #935E55;
+    color: white;
+}
+
+a
+{
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #F5F5F5;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+
+#duck
+{
+    margin-bottom: 10%;
+    float: right;
+    position: auto;
+}
+
+
+
+
+
+/* --- Background picture --- */
+
+/*
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #F8F9FA;
+    border-radius: 0.25rem;
+}
+
+.breadcrumb-item {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.breadcrumb-item.active {
+    color: #000000;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+.section:hover {
+    background-color: #F8F9FA;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+Link style of THIS IS part
+a.jumbotron:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.jumbotron:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.jumbotron:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+Link style for other links
+
+a:link {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #A51C30;
+  background-color: transparent;
+  text-decoration: underline;
+}
+*/
+
+
+/* * {
+    border: 2px solid red;
+} */
+
+
+/* input[type="text"] {
+    line-height: 1.8;
+    width: 25%;
+}
+
+input[type="text"]:hover {
+    background-color: #F8F9FA;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+} */
+
+

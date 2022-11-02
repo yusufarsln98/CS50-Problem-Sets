@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            /* Check answers to questions */
+            document.addEventListener('DOMContentLoaded', function(){
+
+                /* Multiple Choice Question */
+                let correct = document.querySelector('.correct');
+                let incorrects = document.querySelectorAll('.incorrect');
+
+
+                correct.addEventListener('click', function(){
+
+                    /* Clear previous answer */
+                    for (let incorrect of incorrects)
+                    {
+                        incorrect.style.backgroundColor = '#d9edff';
+                    }
+
+                    /* Set the answer color and display message */
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                for (let incorrect of incorrects)
+                {
+                    incorrect.addEventListener('click', function()
+                    {
+                        /* Clear previous answer */
+                        for (let incorrect of incorrects)
+                        {
+                            incorrect.style.backgroundColor = '#d9edff';
+                        }
+                        correct.style.backgroundColor = '#d9edff';
+
+                        /* Set the answer color and display message */
+                        incorrect.style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+                    });
+                }
+
+                /* Free Response Question */
+                let checkButton = document.querySelector('#check');
+                checkButton.addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value.toLowerCase() == 'ankara')
+                    {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+                });
+
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>In which year the date also corresponded to the first 5 digits of PI number on March 14, which is the PI day? (3/14/__)</h3>
+                <button class = "incorrect">2008</button>
+                <button class = "incorrect">2016</button>
+                <button class = "incorrect">1998</button>
+                <button class = "incorrect">2022</button>
+                <button class = "correct">2015</button>
+
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>Where is the capital of Turkey?</h3>
+                <input type="text"></input>
+                <button id="check">Check Answer</button>
+
+                <p id="feedback2"></p>
+            </div>
+
+        </div>
+    </body>
+</html>
